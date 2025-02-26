@@ -1,0 +1,35 @@
+/* ============================= */
+/*     Global Design Tokens      */
+/* ============================= */
+
+:root {
+    /* Font Family */
+    --font-family: "On Air Var";
+
+    /* Label S */
+    --font-label-s-size: 14px;
+    --font-label-s-weight: 550;
+    --font-label-s-line-height: 17px;
+    --font-label-s-letter-spc: 0.16px;
+
+    /* Label M */
+    --font-label-m-size: 16px;
+    --font-label-m-weight: 500;
+    --font-label-m-line-height: 22px;
+    --font-label-m-letter-spc: 0.16px;
+
+    /* Body M */
+    --font-body-m-size: 16px;
+    --font-body-m-weight: 400;
+    --font-body-m-line-height: 22px;
+    --font-body-m-letter-spc: 0.01px;
+
+    /* Spacing */
+    --spacing-xs: 8px;
+    --spacing-s: 12px;
+    --spacing-m: 16px;
+    --spacing-l: 20px;
+
+    /* Radius */
+    --radius-input: 12px;
+}

@@ -1,0 +1,42 @@
+/* COLOURS */
+:root {
+    /* CORE */
+    /* NOTE: We could add prefix --colour to ensure we don't mix namespace in the future */
+    --core-gray-00: #ffffff;
+    --core-gray-300: #c9c9ce;
+    --core-gray-500: #8c8c9a;
+    --core-gray-950: #2c2c31;
+
+    --core-yellow-100: #faf1b6;
+    --core-yellow-700: #a56315;
+
+    --core-red-100: #ffdcdc;
+    --core-red-600: #dc2828;
+
+    /* O2 */
+    --o2-blue-500: #0050ff;
+
+    /* ALPHA */
+    --alpha-dim-50: rgba(#1a1a1a0f, 0.06);
+    --alpha-dim-800: rgba(#1a1a1acc, 0.8);
+
+    /* SURFACE */
+    --surface-x-high: var(--core-gray-500);
+    --surface-x-low: var(--core-gray-00);
+    --surface-brand: var(--o2-blue-500);
+    --surface-danger: var(--core-red-600);
+    --surface-danger-variant: var(--core-red-100);
+    --surface-warning: var(--core-yellow-700);
+    --surface-warning-variant: var(--core-yellow-100);
+
+    /* CONTENT */
+    --content-on-neutral-xx-high: var(--core-gray-950);
+    --content-on-neutral-medium: var(--core-gray-500);
+    --content-on-neutral-low: var(--core-gray-300);
+    --content-on-neutral-danger: var(--core-red-600);
+    --content-on-neutral-warning: var(--core-yellow-700);
+
+    /* STATE */
+    --state-default-hover: var(--alpha-dim-50);
+    --state-default-focus: var(--alpha-dim-800);
+}

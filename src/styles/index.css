@@ -1,0 +1,58 @@
+@import url("colours.css");
+@import url("tokens.css");
+
+@font-face {
+  font-display: swap;
+  font-family: On Air Var;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../assets/DefinitellyNotOnAirVar.woff2) format("woff2");
+}
+
+:root {
+  font-family: "On Air Var", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.label-s {
+  font-family: var(--font-font-family);
+  font-size: var(--font-label-s-size);
+  font-weight: var(--font-label-s-weight);
+  line-height: var(--font-label-s-line-height);
+  letter-spacing: var(--font-label-s-letter-spc);
+}
+
+.label-m {
+  font-family: var(--font-font-family);
+  font-size: var(--font-label-m-size);
+  font-weight: var(--font-label-m-weight);
+  line-height: var(--font-label-m-line-height);
+  letter-spacing: var(--font-label-m-letter-spc);
+}
+
+.body-m {
+  font-family: var(--font-font-family);
+  font-size: var(--font-body-m-size);
+  font-weight: var(--font-body-m-weight);
+  line-height: var(--font-body-m-line-height);
+  letter-spacing: var(--font-body-m-letter-spc);
+}
+
+/* 
+ * NOTE: We can use CSS nesting just like in scss nowadays 🎉 - Baseline 2023
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/Nesting_rules 
+ * https: //caniuse.com/css-nesting
+ */
+
+.body-m p {
+  /* TODO: We might want to set 0px on last child */
+  margin-bottom: 20px;
+}
+
+.body-m li {
+  /* NOTE: Sure this would be what you're after, but there's gap property as well if the parent is set to be flexbox or grid container */
+  margin-bottom: 6px;
+}
