@@ -3,22 +3,27 @@
 
 @font-face {
   font-display: swap;
-  font-family: On Air Var;
+  font-family: "On Air Var";
   font-style: normal;
   font-weight: 400;
-  src: url(../assets/DefinitellyNotOnAirVar.woff2) format("woff2");
-}
-
-:root {
-  font-family: "On Air Var", sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  src: url(../assets/DefinitellyNotOnAirVar.woff2) format("woff2");
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .label-s {
-  font-family: var(--font-font-family);
+  font-family: var(--font-family);
   font-size: var(--font-label-s-size);
   font-weight: var(--font-label-s-weight);
   line-height: var(--font-label-s-line-height);
@@ -26,15 +31,16 @@
 }
 
 .label-m {
-  font-family: var(--font-font-family);
+  font-family: var(--font-family);
   font-size: var(--font-label-m-size);
   font-weight: var(--font-label-m-weight);
   line-height: var(--font-label-m-line-height);
   letter-spacing: var(--font-label-m-letter-spc);
 }
 
+/* NOTE: Not sure what was meant by Body M - I guess it should be body with size applied. There are possibly better ways than this though. */
 .body-m {
-  font-family: var(--font-font-family);
+  font-family: var(--font-family);
   font-size: var(--font-body-m-size);
   font-weight: var(--font-body-m-weight);
   line-height: var(--font-body-m-line-height);
@@ -55,4 +61,13 @@
 .body-m li {
   /* NOTE: Sure this would be what you're after, but there's gap property as well if the parent is set to be flexbox or grid container */
   margin-bottom: 6px;
+}
+
+.main-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
