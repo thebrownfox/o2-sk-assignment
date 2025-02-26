@@ -3,7 +3,6 @@ import "./TextInput.css";
 interface TextInputProps {
     label: string;
     placeholder?: string;
-    optional?: boolean;
     value?: string;
     onChange?: (value: string) => void;
     disabled?: boolean;
@@ -14,17 +13,17 @@ interface TextInputProps {
 export const TextInput = ({
     label,
     placeholder,
-    optional = false,
     value,
     onChange,
     disabled = false,
+    required = false,
     size = 'm',
 }: TextInputProps) => {
     return (
         <div className="text-input-container">
             <label className={`label-m text-input-label`}>
                 {label}
-                {optional && <span className="label-s text-input-optional">Optional</span>}
+                {!required && <span className="label-s text-input-optional">Optional</span>}
             </label>
             <input
                 type="text"

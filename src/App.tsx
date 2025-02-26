@@ -8,7 +8,6 @@ const App = () => {
         <TextInput
           label="Input"
           placeholder="Placeholder"
-          optional={true}
         />
       </div>
     </div>
