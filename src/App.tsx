@@ -8,7 +8,7 @@ const App = () => {
         <TextInput
           label="Input"
           placeholder="Placeholder"
-          optionalLabel={true}
+          optional={true}
         />
       </div>
     </div>
